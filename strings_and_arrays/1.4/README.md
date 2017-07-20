@@ -1,0 +1,1 @@
+Write a method to replace all the spaces in a string with "%20". You may assume that the string has suffient space at the end of the string to hold additional characters, and that you are given the length of the string. Note - If implementating in Java, please use a charater array so that you can preform this operation in place.
