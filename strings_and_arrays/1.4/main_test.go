@@ -3,12 +3,13 @@ package main
 import "testing"
 
 var cases = []struct {
-	Input  string
-	Output string
+	Input      string
+	Output     string
+	TrueLength int
 }{
-	{"mr john smith    ", "mr%20john%20smith"},
-	{"mr john  ", "mr%20john"},
-	{"mr john smith fell in a cup            ", "mr%20john%20smith%20fell%20in%20a%20cup"},
+	{"mr john smith    ", "mr%20john%20smith", 13},
+	{"mr john  ", "mr%20john", 7},
+	{"mr john smith fell in a cup            ", "mr%20john%20smith%20fell%20in%20a%20cup", 27},
 }
 
 func TestInplaceSwap(t *testing.T) {

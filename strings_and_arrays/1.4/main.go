@@ -40,7 +40,7 @@ func countSpacesAfterEnd(s []rune, end int) (spaces int) {
 	return
 }
 
-func addJunk(s []rune) {
+func replace(s []rune) {
 	fill := []rune{'0', '2', '%'}
 	var counter int
 	for i := len(s) - 1; i > 0; i-- {
@@ -67,7 +67,7 @@ func inplaceSwap(s []rune) string {
 			s[newPos] = r
 			s[i] = space
 		}
-		addJunk(s)
+		replace(s)
 	}
 	return string(s)
 }
